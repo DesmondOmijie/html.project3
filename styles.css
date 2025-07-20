@@ -1,0 +1,302 @@
+* {
+	font-family: sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction:column ;
+	flex-wrap: wrap;
+	place-items: center;
+}
+
+
+/*this is the style for the logo*/
+
+.logo {
+	color: beige;
+	font-size: 50px;
+	text-align: center;
+	background-color: blue;
+	border-radius: 20px;
+	width:90px;
+	margin-left:10px;
+}
+
+/*Here is the styles for the nav bar*/
+
+
+ul {
+	
+	margin-right:50px;
+}
+ul li {
+	list-style: none;
+}
+
+ul li a {
+	font-size: 30px;
+	text-decoration: none;
+
+}
+
+
+/*the style for the P element*/
+
+
+.banking > p {
+	font-size:18px;
+	text-align:center;
+}
+
+
+/*styles for the 'Get started button'*/
+
+.banking > h3 {
+	text-align: center;
+	color: beige;
+	background-color: blue;
+	border-radius: 7px;
+	font-size:25px;
+
+}
+
+
+/*...styles for section one...*/
+
+.one {
+	
+	place-items: center;
+}
+
+.one div {
+	background-color:beige;
+	place-items:center;
+	border-radius: 7px;
+	margin: 20px;
+	padding:20px;
+
+}
+
+.one div p {
+	text-align:center;
+	font-size:18px;
+	padding:10px;
+}
+
+
+/*... styles for section two..
+*/
+.two {
+	place-items:center;
+}
+
+.two div {
+	background-color:beige;
+	border-radius: 7px;
+	margin:20px;
+}
+
+.two div p {
+	font-size:18px;
+	padding:10px;
+}
+
+
+/*... styles for the footer..*/
+
+footer {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	justify-content: center;
+}
+
+footer h4 {
+	font-size: 40px;
+}
+
+/*
+..... media queries targeting screen of 768px and above...*/
+
+
+
+
+
+	@media(min-width:1920px){
+
+        .nav {
+			   display:flex;
+			   gap:900px;
+			   padding:20px;
+		   }
+
+		ul {
+			display:inline-flex;
+			gap:90px;
+		}
+	     
+		.logo {
+			font-size: 70px;
+		}
+        
+
+        ul li a {
+		font-size:50px;
+	}
+	
+	}
+    
+    @media(min-width:1100px) and (max-width:1919px){
+
+
+		.nav {
+			 display:flex;
+			 gap:100px;
+			 padding:30px;
+		 }
+
+		.logo {
+			font-size:40px;
+			padding:10px;
+			
+		} 
+	}
+		
+
+	@media(min-width:1100px){
+
+		.banking p {
+			font-size:30px;
+		}
+
+		.nav {
+			 display:flex;
+			 gap:100px;
+			 padding:30px;
+		 }
+
+		.logo {
+			font-size:40px;
+			padding:10px;
+			
+		}
+	
+        .one{
+			margin:10px auto;
+			width:90%;
+		}
+
+		.two .quote {
+			font-size: 30px;
+		}
+
+		.two div p{
+			font-size: 30px;
+		}
+
+	.two {
+		display:grid;
+		grid-template-rows:403px 403px;
+		grid-template-columns:;
+		margin:20px auto;
+		width:90%;
+	}
+
+	.two div {
+		max-width:615;
+		max-height:303;
+		
+	}
+
+
+	.two div {
+		display:flex;
+		gap:19px;
+		
+	}
+
+	.two img {
+		width:500px;
+		height:360px;
+	}
+
+	.two div p {
+		font-size:30px;
+		align-self:center;
+		
+
+	
+}
+
+
+
+
+@media (min-width:768px){
+	
+
+	.banking h1 {
+		font-size:50px;
+		padding:20px;
+		margin:0px;
+	}
+
+	.banking p header .nav {
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	place-items: center;
+	gap: 50px;
+}
+
+
+	ul {
+		display:flex;
+		justify-content:flex-end;
+		gap:30px;
+	}
+
+	ul li a {
+		font-size:30px;
+	}
+		margin:0px;
+		font-size:30px;
+	}
+
+
+	.banking > h3 {
+		padding:20px;
+		width:200px;
+		margin-left:130px;
+		
+	}
+
+
+	.one {
+		display:flex;
+		justify-content:center;
+	}
+
+
+	.one div h2{
+		font-size:30px;
+	}
+	
+	.one div p {
+		font-size:25px;
+	}
+
+	.two {
+		display:grid;
+		grid-template-rows:1fr 1fr;
+		grid-template-columns:1fr 1fr;
+		justify-items: stretch;
+		align-items: stretch;
+	}
+	
+	
+    div .float {
+		float:right ;
+	}
+	
+}
+

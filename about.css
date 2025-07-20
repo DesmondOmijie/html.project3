@@ -1,0 +1,61 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+
+
+header {
+	  width: 100%;
+	background-color: darkblue;
+}
+
+nav {
+	color: white;
+	display: flex;
+	gap: 800px;
+	padding: 30px;
+}
+
+ul	{
+	display: inline-flex;
+	gap: 90px;
+}
+
+ul li {
+	list-style: none;
+	
+}
+
+ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+main {
+	padding:30px;
+	text-align:center;
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	gap:40px;
+	height: 80vh;
+}
+
+footer {
+	display: flex;
+	gap:900px;
+	align-items:center;
+	background-color: darkblue;
+	height: 8vh;
+}
+
+footer p {
+	font-size: 20px;
+	display: flex;
+	color: white;
+	padding: 15px;
+}
+
